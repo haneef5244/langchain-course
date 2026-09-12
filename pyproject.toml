@@ -1,20 +1,27 @@
 [project]
-name = "langchain-course"
+name = "codespaces-blank"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
+authors = [
+    { name = "Muhammad Haneef Hamzah", email = "46570018+haneef5244@users.noreply.github.com" }
+]
 requires-python = ">=3.14"
 dependencies = [
     "black>=26.5.1",
     "isort>=9.0.1",
     "langchain>=1.4.0",
     "langchain-ollama>=1.1.0",
+    "langchain-pinecone>=0.2.13",
+    "langchain-text-splitters>=1.1.2",
+    "langchain-unstructured>=1.0.1",
     "python-dotenv>=1.2.3",
+    "unstructured>=0.27.5",
 ]
 
 [project.scripts]
-langchain-course = "langchain_course:main"
+codespaces-blank = "codespaces_blank:main"
 
 [build-system]
-requires = ["uv_build>=0.12.5,<0.13.0"]
+requires = ["uv_build>=0.12.13,<0.13.0"]
 build-backend = "uv_build"
